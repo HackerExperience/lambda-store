@@ -13,10 +13,10 @@ with_error = False
 
 def bootstrap():
     # Cleanup and prepare packaging folder
-    shutil.rmtree('_packages/')
-    os.makedirs('_packages', exist_ok=True)
+    shutil.rmtree('_packages/', ignore_errors=True)
+    os.makedirs('_packages')
 
-    shutil.rmtree('_dependencies/')
+    shutil.rmtree('_dependencies/', ignore_errors=True)
     os.makedirs('_dependencies', exist_ok=True)
 
 def scan_folders():
