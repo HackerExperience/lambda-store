@@ -1,0 +1,5 @@
+{
+	"memory": 128,
+	"timeout": 5,
+	"handler": "jse.lambda_handler"
+}

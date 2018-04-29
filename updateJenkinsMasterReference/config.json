@@ -1,0 +1,6 @@
+{
+  "memory": 128,
+  "timeout": 60,
+  "handler": "ujmr.lambda_handler",
+  "role_name": "lambda_basic_execution"
+}
