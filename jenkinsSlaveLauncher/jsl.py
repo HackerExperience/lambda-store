@@ -21,6 +21,7 @@ default_instance_map = {
     'small-3': default_small_instances,
 }
 
+# TODO: Fetch AMI dynamically from tags or cache
 role_map = {
     'helix': {
         'ami_id': 'ami-f109c38c',
