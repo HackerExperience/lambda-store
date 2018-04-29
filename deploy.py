@@ -83,12 +83,12 @@ def upsert_function(function_name, config):
 
 def create_package(function_name, config):
     # Zip application-specific stuff
-    cmd1 = 'cd {0}; zip -r9 ../_packages/{0}.zip *'.format(function_name)
+    cmd1 = 'cd {0}; zip -X -r9 ../_packages/{0}.zip *'.format(function_name)
     subprocess.run(cmd1, check=True, shell=True)
 
     # Add dependencies to package (if they exist)
     if os.path.exists('_dependencies/{}/'.format(function_name)):
-        cmd2 = 'cd _dependencies/{0}; zip -r9 ../../_packages/{0}.zip *'.format(function_name)
+        cmd2 = 'cd _dependencies/{0}; zip -X -r9 ../../_packages/{0}.zip *'.format(function_name)
         subprocess.run(cmd2, check=True, shell=True)
 
     if not os.stat('_packages/{0}.zip'.format(function_name)):
