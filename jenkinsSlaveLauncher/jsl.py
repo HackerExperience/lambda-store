@@ -29,8 +29,8 @@ role_map = {
         'instance_type': default_instance_map
     },
     'utils': {
-        'ami_id': 'ami-a15fecde',
-        'snapshot_id': 'snap-00895a0f5dd73a713',
+        'ami_id': 'ami-3dda6642',
+        'snapshot_id': 'snap-0fb3caacf04033808',
         'instance_type': default_instance_map
     }
 }
